@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Math Game App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="setup">
+    <h1>Welcome to the Naina's Math Game!</h1>
+    <label for="max-number">Enter the maximum number for questions:</label>
+    <input type="number" id="max-number" placeholder="Enter a number">
+    <button id="start-game">Start Game</button>
+  </div>
+
+  <div id="game" class="hidden">
+    <h2 id="question">Question</h2>
+    <input type="number" id="answer" placeholder="Your Answer">
+    <button id="submit-answer">Submit</button>
+    <p id="timer">Time Left: 120s</p>
+    <p id="scoreboard">Score: <span id="score">0</span> | High Score: <span id="high-score">0</span></p>
+    <button id="end-game">End Game</button>
+  </div>
+
+  <div id="game-over" class="hidden">
+    <h2>Game Over!</h2>
+    <p>Your final score is: <span id="final-score">0</span></p>
+    <button id="restart-game">Restart Game</button>
+  </div>
+
+  <canvas id="my-canvas"></canvas>
+  <script src="https://cdn.jsdelivr.net/npm/confetti-js/dist/index.min.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>
